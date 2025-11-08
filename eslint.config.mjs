@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^usdk(/.*)?',
+              regex: '^usdk-js(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],
