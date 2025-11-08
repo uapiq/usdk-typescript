@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'usdk/internal/uploads';
-import { toFile } from 'usdk/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'usdk-js/internal/uploads';
+import { toFile } from 'usdk-js/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

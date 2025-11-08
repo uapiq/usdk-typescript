@@ -1,12 +1,12 @@
 {
-  "name": "usdk",
-  "version": "0.0.1",
+  "name": "usdk-js",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the uAPI API",
   "author": "uAPI <contact@uapi.nl>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:stainless-sdks/usdk-typescript",
+  "repository": "github:uapiq/usdk-typescript",
   "license": "Apache-2.0",
   "packageManager": "pnpm@10.14.0",
   "files": [

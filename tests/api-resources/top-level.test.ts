@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import uAPI from 'usdk';
+import uAPI from 'usdk-js';
 
 const client = new uAPI({
   apiKey: 'My API Key',
