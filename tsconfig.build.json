@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "usdk/*": ["./dist/src/*"],
-      "usdk": ["./dist/src/index.ts"]
+      "usdk-js/*": ["./dist/src/*"],
+      "usdk-js": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

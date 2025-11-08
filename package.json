@@ -1,5 +1,5 @@
 {
-  "name": "usdk",
+  "name": "usdk-js",
   "version": "0.0.1",
   "description": "The official TypeScript library for the uAPI API",
   "author": "uAPI <contact@uapi.nl>",

@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'usdk/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'usdk-js/internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 
