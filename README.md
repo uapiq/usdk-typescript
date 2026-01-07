@@ -55,15 +55,17 @@ a subclass of `APIError` will be thrown:
 
 <!-- prettier-ignore -->
 ```ts
-const response = await client.extract({ url: 'https://finance.yahoo.com/quote/NVDA/' }).catch(async (err) => {
-  if (err instanceof uAPI.APIError) {
-    console.log(err.status); // 400
-    console.log(err.name); // BadRequestError
-    console.log(err.headers); // {server: 'nginx', ...}
-  } else {
-    throw err;
-  }
-});
+const response = await client
+  .extract({ url: 'https://finance.yahoo.com/quote/NVDA/' })
+  .catch(async (err) => {
+    if (err instanceof uAPI.APIError) {
+      console.log(err.status); // 400
+      console.log(err.name); // BadRequestError
+      console.log(err.headers); // {server: 'nginx', ...}
+    } else {
+      throw err;
+    }
+  });
 ```
 
 Error codes are as follows:
@@ -135,7 +137,9 @@ Unlike `.asResponse()` this method consumes the body, returning once it is parse
 ```ts
 const client = new uAPI();
 
-const response = await client.extract({ url: 'https://finance.yahoo.com/quote/NVDA/' }).asResponse();
+const response = await client
+  .extract({ url: 'https://finance.yahoo.com/quote/NVDA/' })
+  .asResponse();
 console.log(response.headers.get('X-My-Header'));
 console.log(response.statusText); // access the underlying Response object
 
