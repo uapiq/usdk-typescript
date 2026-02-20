@@ -8,7 +8,7 @@ const client = new uAPI({
 });
 
 describe('top level methods', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('extract: only required params', async () => {
     const responsePromise = client.extract({ url: 'url' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('top level methods', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('extract: required and optional params', async () => {
     const response = await client.extract({ url: 'url' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('search: only required params', async () => {
     const responsePromise = client.search({ query: 'query' });
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('top level methods', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('search: required and optional params', async () => {
     const response = await client.search({ query: 'query' });
   });
