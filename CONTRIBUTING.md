@@ -60,7 +60,7 @@ $ yarn link usdk-js
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global usdk-js
+$ pnpm link --global usdk-js
 ```
 
 ## Running tests
